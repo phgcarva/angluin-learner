@@ -6,6 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		DFA dfa = new DFA();
+		RecursiveTeacher teacher = new RecursiveTeacher();
 		
 		State s0 = new State(0); State s1 = new State(1); 
 		State s2 = new State(2); State s3 = new State(3);
@@ -32,7 +33,7 @@ public class Main {
 		
 		dfa.setInitialState(s0);
 		
-		System.out.println(dfa.readString(dfa.getInitialState(), "abbaababababba"));
+		System.out.println(teacher.answerMembershipQuery("aaaaa"));
 		
 	}
 }
